@@ -12,7 +12,7 @@
 		"type": "git",
 		"url": "https://github.com/gabrielsule/vscode-jukebox.git"
 	},
-"engines": {
+	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
@@ -31,9 +31,9 @@
 		"onCommand:extension.radiomusic"
 	],
 	"main": "./out/extension.js",
+	"icon": "resources/images/vinyl.png",
 	"contributes": {
-		"commands": [
-			{
+		"commands": [{
 				"command": "extension.loadmusic",
 				"title": "Load",
 				"category": "🎵 Music"
