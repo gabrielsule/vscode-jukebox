@@ -1,0 +1,82 @@
+{
+	"name": "jukebox",
+	"displayName": "jukebox",
+	"description": "La música, como toda manifestación artística, es un producto cultural con múltiples finalidades, entre otras, la de suscitar una experiencia estética en el oyente, la de expresar sentimientos, emociones, circunstancias, pensamientos o ideas",
+	"version": "0.0.1",
+	"publisher": "gabrielsule",
+	"author": {
+		"name": "Gabriel D. Sule",
+		"email": "gabrielsule@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gabrielsule/vscode-jukebox.git"
+	},
+"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"musica",
+		"music",
+		"relax",
+		"ideas",
+		"status bar",
+		"sound"
+	],
+	"activationEvents": [
+		"onCommand:extension.loadmusic",
+		"onCommand:extension.radiomusic"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.loadmusic",
+				"title": "Load",
+				"category": "🎵 Music"
+			},
+			{
+				"command": "extension.startmusic",
+				"title": "Start",
+				"category": "🎵 Music"
+			},
+			{
+				"command": "extension.stopmusic",
+				"title": "Stop",
+				"category": "🎵 Music"
+			},
+			{
+				"command": "extension.nextmusic",
+				"title": "Next",
+				"category": "🎵 Music"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"compilerOptions": {
+		"esModuleInterop": true
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
+		"vscode-test": "^1.2.2"
+	},
+	"dependencies": {
+		"node-key-sender": "^1.0.11"
+	}
+}
