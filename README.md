@@ -22,3 +22,5 @@ https://marketplace.visualstudio.com/items?itemName=gabrielsule.jukebox
 * [Wikipedia](https://es.wikipedia.org/wiki/M%C3%BAsica)
 * [Stealth Player](https://sourceforge.net/projects/stealthplayer/)
 * Icono creado por [Freepik](https://www.freepik.com/) en [www.flaticon.com](https://www.flaticon.com)
+
+### [Buy me a coffee ☕](https://www.buymeacoffee.com/HvQATbz)
